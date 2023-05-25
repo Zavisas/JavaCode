@@ -1,15 +1,13 @@
 import java.util.Scanner;
 
-
-
-
-
 public class nomeMes {
     public static void main(String[] args) {
         Scanner lerMes = new Scanner(System.in);
+
         System.out.println("=========| MES ANIVERSARIO |==========");
         System.out.println();
         System.out.print(" Digite um numero: ");
+
          int numMes = lerMes.nextInt();
 
         switch (numMes) {
