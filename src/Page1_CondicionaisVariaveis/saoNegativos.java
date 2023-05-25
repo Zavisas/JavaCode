@@ -1,3 +1,5 @@
+package Page1_CondicionaisVariaveis;
+
 import java.awt.event.MouseAdapter;
 import java.util.Scanner;
 
