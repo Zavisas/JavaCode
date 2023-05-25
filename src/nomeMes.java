@@ -7,50 +7,53 @@ import java.util.Scanner;
 public class nomeMes {
     public static void main(String[] args) {
         Scanner lerMes = new Scanner(System.in);
-
-        System.out.println("Digite um numero: ");
+        System.out.println("=========| MES ANIVERSARIO |==========");
+        System.out.println();
+        System.out.print(" Digite um numero: ");
          int numMes = lerMes.nextInt();
 
         switch (numMes) {
             case 1:
-                System.out.println("janeiro")
+                System.out.println("Janeiro")
                 ;break;
 
             case 2:
-                System.out.println("fevereiro");
+                System.out.println("Fevereiro");
                 break;
             case 3:
-                System.out.println("março");
+                System.out.println("Março");
                 break;
 
             case 4:
-                System.out.println("abril");
+                System.out.println("Abril");
                 break;
             case 5:
-                System.out.println("maio");
+                System.out.println("Maio");
                 break;
             case 6:
-                System.out.println("junho");
+                System.out.println("Junho");
                 break;
 
             case 7:
-                System.out.println("julho");
+                System.out.println("Julho");
                 break;
             case 8:
-                System.out.println("agosto");
+                System.out.println("Agosto");
                 break;
             case 9:
-                System.out.println("setembro");
+                System.out.println("Setembro");
                 break;
             case 10:
-                System.out.println("outubro");
+                System.out.println("Outubro");
                 break;
             case 11:
-                System.out.println("novembro");
+                System.out.println("Novembro");
                 break;
             case 12:
-                System.out.println("dezembro");
+                System.out.println("Dezembro");
                 break;
+            default:
+                System.out.println("|=== Mes inválido ===|");
         }
 
         }
