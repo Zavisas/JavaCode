@@ -21,7 +21,7 @@ public class Voto {
             System.out.println("Seu voto é facultativo!");
             
         } else if (idade >= 18 && idade < 70) {
-            System.out.println("Seu voto é obrigatório! :) ");
+            System.out.println("Seu voto é obrigatório! :( ");
             
         }
 
