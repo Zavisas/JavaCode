@@ -1,56 +1,35 @@
 package LacosJava;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Negativos {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int[] valores = new int[5];
+        ArrayList<Integer> valores = new ArrayList();
 
         System.out.println("======================");
         System.out.println("|      NEGATIVOS     |");
         System.out.println("======================");
         System.out.println("");
-        System.out.println("Digite 5 valores: ");
+        System.out.println("Digite um numero de valores: ");
+        int v = sc.nextInt();
 
-        //ler valores do usuario
 
-        for (int i = 0; i < valores.length; i++) {
-            valores[i] = sc.nextInt();
+        for (int i = 1; i <= v; i++) {
+            System.out.println("Digite a " + i + " valor: ");
+            int valor = sc.nextInt();
+            valores.add(valor);
         }
 
-        System.out.println("Valores negativos!");
+        for (int valor : valores) {
+            if (valor < 0) {
+                System.out.println("Negativos | " + valor + " |");
 
-        //Verifica valores negativos
-
-        for (int i = 0; i < valores.length; i++) {
-            if (valores[i] < 0) {
-                System.out.println(valores[i]);
 
             }
+
         }
     }
 }
-
-      /*  System.out.print("Digite o 1° numero: ");
-        int n1 = sc.nextInt();
-        System.out.print("Digite o 2° numero: ");
-        int n2 = sc.nextInt();
-        System.out.print("Digite o 3° numero: ");
-        int n3 = sc.nextInt();
-        System.out.print("Digite o 4° numero: ");
-        int n4 = sc.nextInt();
-        System.out.print("Digite o 5° numero: ");
-        int n5 = sc.nextInt();
-
-        int negativos = 0;
-
-        for (int i = 0; i < 5; i++) {
-            if (negativos < 0) {
-                System.out.println("NEGATIVOS!" + negativos);
-
-            }
-        }
-    }
-}*/
